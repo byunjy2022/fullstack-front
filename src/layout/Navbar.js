@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="container">
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
@@ -19,11 +20,9 @@ export default function Navbar() {
             >
               <span className="navbar-toggle-icon"></span>
             </button>
-
-            <button className="btn btn-outline-light">Add User</button>
+            <Link className="btn btn-outline-light" to="/adduser">Add User</Link>
         </div>
       </nav>
-        
     </div>
   )
 }

@@ -1,10 +1,34 @@
-import React,{useState,useEffect} from 'react';
-import axios from 'axios';
+import React from 'react';
 
-export default function AddUser() {
-    const [user,setUser]=useState();
-    
+export default function AddUser(){
     return (
-    <div>AddUser</div>
-    )
+    <div className="container">
+        <div className="row">
+            <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
+                <h2 className="text-center m-4">Register User</h2>
+                <div className="mb-3">
+                    <label htmlfor="Name" className="form-label">Name</label>
+                    <input
+                    type={"text"}
+                    className="form-control"
+                    placeholder="Enter your name"
+                    name="name" />
+                    <label htmlfor="Name" className="form-label">Name</label>
+                    <input
+                    type={"text"}
+                    className="form-control"
+                    placeholder="Enter your username"
+                    name="username" />
+                    <label htmlfor="Name" className="form-label">Name</label>
+                    <input
+                    type={"text"}
+                    className="form-control"
+                    placeholder="Enter your email"
+                    name="email" />
+                </div>
+            </div>
+        </div>
+        AddUser Form
+    </div>
+    );
 }

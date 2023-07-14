@@ -6,7 +6,6 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import AddUser from './users/AddUser';
 
-
 function App() {
   return (
     <div className="App">

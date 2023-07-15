@@ -3,7 +3,9 @@ import {Link,useNavigate} from 'react-router-dom';
 import axios from 'axios';
 
 export default function AddUser(){
+
     let navigate = useNavigate();
+
     const [user, setUser]=useState({
         name:"",
         username:"",
@@ -57,7 +59,7 @@ export default function AddUser(){
                     onChange={(e)=>onInputChanage(e)} />
                 </div>
                 <button type="submit" className="btn btn-outline-primary">Submit</button>
-                <Link className="btn btn-outline-danger" to={"/"}>Cancel</Link>       
+                <Link className="btn btn-outline-danger" to="/">Cancel</Link>       
                 </form>        
             </div>
         </div>

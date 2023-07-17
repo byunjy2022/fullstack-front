@@ -12,6 +12,7 @@ export default function EditUser(){
     const{name,username,email}=user;
 
     const {id} = useParams();
+    
     const onInputChanage = (e) =>{
         setUser({...user, [e.target.name]:e.target.value});
     };

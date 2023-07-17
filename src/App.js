@@ -2,11 +2,11 @@
 import './App.css';
 import Navbar from './layout/Navbar';
 import Home from './pages/Home';
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import AddUser from './users/AddUser';
 import EditUser from './users/EditUser';
 import ViewUser from './users/ViewUser';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
 function App() {
   return (

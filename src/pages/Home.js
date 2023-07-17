@@ -5,16 +5,18 @@ import { Link,useParams } from 'react-router-dom';
 export default function Home() {
     const [users, setUsers]=useState([]);
     useEffect(()=>{
-        loadUsers();
-    },[]);
-    const {id} = useParams();
+        loadUsers()
+    },[])
+
+    const {id} = useParams()
+    
     const loadUsers=async()=>{
         const result= await axios.get("http://localhost:8088/users");
         setUsers(result.data);
         //console.log(result);
     };
 
-    const deleteUser=async(id)=>{
+    const deleteUser=async()=>{
         const result = await axios.delete(`http://localhost:8088/user/${id}`)
         loadUsers()
     }
